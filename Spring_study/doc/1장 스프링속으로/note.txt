@@ -1,0 +1,21 @@
+1.1 DI (Dependenct Injection) 의존성 주입.
+
+	- 결합도를 낮추는 방법
+	- A클래스 B클래스를 이용 할 때, A 클래스 내에서 B클래스를 인스턴스화 하여 연결하지 않도록 하는 방법.
+	- A클래스가 B클래스를 이용 할 때는, 생성자의 인자(아규먼트)를 다른 곳에서 받아 올 수 있도록 유도해야한다.
+	- Junit을 활용 한 TTD 수행 시 편리 할 듯.
+	
+	- 스프링 설정파일 xml 중 생성자 아규먼트 설정을 통해 와이어링 즉 관계 설정을 해 줄 수 있다.
+	- 설정방법은 <bin id="주입대상" class="주입대상"><constructor-arg ref="종속객체"> </been>
+
+	AOP의 의미는 다시한번 봐야 할 듯.
+	일단 책에서는 타 클래스의 메소드를 본인이 관리해서는 안된다는 느낌을 표현하고 있지만, 명확하지 않아보인다.
+	여러곳에서 사용되고 있는 로직을 한곳으로, 기능별 뷰 포인트에 따라서 Aspect별 관리를 할 수 있다고 표현하지만, 너무 미약하다.
+
+	뒷 부분의 경우는 책을 더 보면 될듯.
+
+	AOP참고
+	http://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte:fdl:aop
+	http://ldg.pe.kr/framework_reference/spring/ver1.2.2/html/aop.html
+	http://isstory83.tistory.com/93
+	https://en.wikipedia.org/wiki/Aspect-oriented_programming
